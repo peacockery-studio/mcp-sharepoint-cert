@@ -5,6 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import pytest
+from click.exceptions import Exit as ClickExit
 
 from mcp_sharepoint.setup import copy_to_clipboard, generate_certificate
 
@@ -52,10 +53,10 @@ class TestGenerateCertificate:
         with patch("subprocess.run") as mock_run:
             mock_run.side_effect = FileNotFoundError()
 
-            with pytest.raises(SystemExit) as exc_info:
+            with pytest.raises(ClickExit) as exc_info:
                 generate_certificate(output_dir=str(tmp_path))
 
-            assert exc_info.value.code == 1
+            assert exc_info.value.exit_code == 1
 
 
 class TestCopyToClipboard:

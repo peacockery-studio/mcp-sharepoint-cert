@@ -25,15 +25,20 @@ Or install with uv:
 uv pip install mcp-sharepoint-cert
 ```
 
-### 2. Create Azure App & Certificate
+### 2. Run Interactive Setup
 
 ```bash
-# Generate certificate for authentication
 uvx mcp-sharepoint-cert-setup
-# Or if installed: mcp-sharepoint-cert-setup
 ```
 
-This creates a certificate and shows you exactly what to do next.
+The setup wizard will:
+1. Generate a certificate for authentication
+2. Guide you through Azure configuration
+3. Collect your Azure app details
+4. Ask which AI assistant you use (Claude Desktop, Claude Code, Cursor, Windsurf)
+5. Output an **AI-ready prompt** that you paste into your assistant to finish configuration
+
+The wizard generates `INSTALL_WITH_AI.md` - just paste it into your AI assistant and let it configure everything for you!
 
 ### 3. Configure Azure (One-time setup)
 
@@ -46,9 +51,11 @@ This creates a certificate and shows you exactly what to do next.
    - Add `Sites.FullControl.All` (or `Sites.ReadWrite.All` for read/write only)
    - Click **Grant admin consent**
 
-### 4. Configure Environment
+### 4. Configure Your AI Assistant
 
-Create a `.env` file:
+The setup wizard outputs `INSTALL_WITH_AI.md` - paste this into your AI assistant (Claude, Cursor, etc.) and it will configure the MCP server for you automatically.
+
+**Or configure manually** - create a `.env` file:
 
 ```env
 SHP_ID_APP=your-application-client-id
@@ -59,7 +66,7 @@ SHP_CERT_PATH=certs/sharepoint.pem
 SHP_CERT_THUMBPRINT=your-certificate-thumbprint
 ```
 
-### 5. Run
+### 5. Run (Standalone)
 
 ```bash
 mcp-sharepoint-cert
