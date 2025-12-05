@@ -1,8 +1,8 @@
 # SharePoint MCP Server (Certificate Auth)
 
 [![PyPI version](https://badge.fury.io/py/mcp-sharepoint-cert.svg)](https://badge.fury.io/py/mcp-sharepoint-cert)
-[![CI](https://github.com/chikingsley/mcp-sharepoint/actions/workflows/ci.yml/badge.svg)](https://github.com/chikingsley/mcp-sharepoint/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/chikingsley/mcp-sharepoint/graph/badge.svg)](https://codecov.io/gh/chikingsley/mcp-sharepoint)
+[![CI](https://github.com/peacockery-studio/mcp-sharepoint-cert/actions/workflows/ci.yml/badge.svg)](https://github.com/peacockery-studio/mcp-sharepoint-cert/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/peacockery-studio/mcp-sharepoint-cert/graph/badge.svg)](https://codecov.io/gh/peacockery-studio/mcp-sharepoint-cert)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -162,8 +162,8 @@ Intelligent content extraction for common file types:
 ### Setup
 
 ```bash
-git clone https://github.com/chikingsley/mcp-sharepoint.git
-cd mcp-sharepoint
+git clone https://github.com/peacockery-studio/mcp-sharepoint-cert.git
+cd mcp-sharepoint-cert
 uv sync --group dev
 ```
 

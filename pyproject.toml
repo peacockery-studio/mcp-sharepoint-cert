@@ -22,9 +22,9 @@ name = "Chi Ejimofor"
 email = "chi@peacockery.studio"
 
 [project.urls]
-Homepage = "https://github.com/chikingsley/mcp-sharepoint"
-Repository = "https://github.com/chikingsley/mcp-sharepoint"
-Issues = "https://github.com/chikingsley/mcp-sharepoint/issues"
+Homepage = "https://github.com/peacockery-studio/mcp-sharepoint-cert"
+Repository = "https://github.com/peacockery-studio/mcp-sharepoint-cert"
+Issues = "https://github.com/peacockery-studio/mcp-sharepoint-cert/issues"
 
 [project.scripts]
 mcp-sharepoint-cert = "mcp_sharepoint:main"
